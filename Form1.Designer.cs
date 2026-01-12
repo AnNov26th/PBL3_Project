@@ -20,9 +20,6 @@ partial class Form1
         this.btnTest = new System.Windows.Forms.Button();
         this.SuspendLayout();
         
-        // 
-        // btnTest
-        // 
         this.btnTest.Location = new System.Drawing.Point(180, 30);
         this.btnTest.Name = "btnTest";
         this.btnTest.Size = new System.Drawing.Size(150, 40);
@@ -31,9 +28,6 @@ partial class Form1
         this.btnTest.UseVisualStyleBackColor = true;
         this.btnTest.Click += new System.EventHandler(this.btnTest_Click);
 
-        // 
-        // Form1
-        // 
         this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
         this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
         this.ClientSize = new System.Drawing.Size(600, 450);
@@ -45,6 +39,5 @@ partial class Form1
 
     #endregion
 
-    // Khai báo các biến ở đây để dùng chung cho cả class Form1
     private System.Windows.Forms.Button btnTest;
 }

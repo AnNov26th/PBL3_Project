@@ -195,3 +195,4 @@ F:\PBL3_Project\PBL3_Project\obj\Debug\net10.0-windows\refint\PBL3_Project.dll
 F:\PBL3_Project\PBL3_Project\obj\Debug\net10.0-windows\PBL3_Project.pdb
 F:\PBL3_Project\PBL3_Project\obj\Debug\net10.0-windows\PBL3_Project.genruntimeconfig.cache
 F:\PBL3_Project\PBL3_Project\obj\Debug\net10.0-windows\ref\PBL3_Project.dll
+F:\PBL3_Project\PBL3_Project\obj\Debug\net10.0-windows\PBL3_Project.sourcelink.json
