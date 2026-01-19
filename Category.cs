@@ -6,12 +6,10 @@ namespace PBL3_Project
     public class Category
     {
         [Key]
-        public int category_id { get; set; } // Khớp với cột category_id
+        public int category_id { get; set; }
 
         [Required]
-        public string category_name { get; set; } // Khớp với cột category_name
-
-        // Mối quan hệ 1-N: Một danh mục có nhiều sản phẩm
+        public string category_name { get; set; }
         public virtual ICollection<Product> Products { get; set; }
     }
 }

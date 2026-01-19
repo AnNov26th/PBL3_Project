@@ -15,21 +15,18 @@ public partial class Form1 : Form
         this.Size = new Size(600, 450);
         this.Text = "PBL3 - Quan Ly Shop Giay";
 
-        // 1. Tạo cái bảng hiển thị
         dgvData = new DataGridView();
         dgvData.Location = new Point(20, 100);
         dgvData.Size = new Size(540, 280);
         dgvData.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
         this.Controls.Add(dgvData);
 
-        // 2. Nút bấm tải danh sách Category (Loại giày)
         Button btnLoad = new Button();
         btnLoad.Text = "Tải danh sách loại giày";
         btnLoad.Location = new Point(20, 30);
         btnLoad.Size = new Size(150, 40);
         btnLoad.Click += (s, e) => {
             using (var db = new PBL3Context()) {
-                // SỬA: LoaiGiays -> Categories
                 dgvData.DataSource = db.Category.ToList(); 
             }
         };
@@ -46,10 +43,8 @@ public partial class Form1 : Form
             {
                 if (db.Database.CanConnect())
                 {
-                    // Chạy hàm tạo dữ liệu mẫu (nhớ sửa hàm này trong Context thành Categories)
                     db.SeedData();
 
-                    // SỬA: LoaiGiays -> Categories
                     int count = db.Category.Count();
                     
                     MessageBox.Show($"Kết nối thành công tới ShopGiayDB!\nTrong DB đang có {count} loại giày.", "Thông báo");

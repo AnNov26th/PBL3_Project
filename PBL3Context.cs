@@ -1,5 +1,5 @@
 using Microsoft.EntityFrameworkCore;
-using System.Linq; // Thêm cái này để dùng được hàm .Any()
+using System.Linq;
 
 namespace PBL3_Project
 {

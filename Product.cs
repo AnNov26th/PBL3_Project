@@ -18,7 +18,6 @@ namespace PBL3_Project
 
         public string description { get; set; }
 
-        // Navigation property để liên kết ngược lại Category
         [ForeignKey("category_id")]
         public virtual Category Category { get; set; }
     }
